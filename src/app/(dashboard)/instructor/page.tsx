@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import { getPublishedCourses } from "@/actions/courses";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { GlassButton } from "@/components/ui/GlassButton";
