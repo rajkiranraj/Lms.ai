@@ -31,13 +31,13 @@ export default async function CoursePlayerPage({ params }: { params: { courseId:
                 </div>
 
                 <div className="flex-1 overflow-y-auto p-4 space-y-6">
-                    {course.modules.map((module, index) => (
+                    {course.modules.map((module: any, index: number) => (
                         <div key={module.id}>
                             <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3 px-2">
                                 Module {index + 1}: {module.title}
                             </h3>
                             <div className="space-y-1">
-                                {module.lessons.map((lesson) => (
+                                {module.lessons.map((lesson: any) => (
                                     <button
                                         key={lesson.id}
                                         className={cn(

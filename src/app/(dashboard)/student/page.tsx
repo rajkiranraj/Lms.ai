@@ -51,7 +51,7 @@ export default async function StudentDashboard() {
             <div>
                 <h2 className="text-xl font-semibold mb-6">Your Courses</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {courses.map((course) => (
+                    {courses.map((course: any) => (
                         <Link key={course.id} href={`/course/${course.id}`}>
                             <GlassCard className="h-full flex flex-col group cursor-pointer">
                                 <div className="aspect-video rounded-xl bg-gray-100 dark:bg-gray-800 mb-4 overflow-hidden relative">
